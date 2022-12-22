@@ -1,0 +1,23 @@
+<div class="login-container">
+    <img class="filim" src="assets\images\filim2-removebg-preview.png" alt="">
+    <div class="logo">Shitflix</div>
+    <div class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto asperiores velit consequuntur quas vero magni animi, necessitatibus ipsam similique, itaque voluptatum iste vel id possimus laudantium quidem sunt unde! Voluptatum.
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="uname">
+
+        </div>
+        <div class="form-group">
+            <label for="pswd">Password</label>
+            <input type="text" name="pswd" class="form-control" [(ngModel)]="pswd">
+             
+        </div>
+        <div class="btn-container">
+           <div class="error">{{errorMsg}}</div>
+            <div class="btn btn-dark" (click)="login()">Login</div>
+        </div>
+    </div>
+</div>
